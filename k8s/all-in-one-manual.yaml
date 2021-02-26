@@ -14,11 +14,11 @@ spec:
       spec:
         containers:
         - name: aspnet-people-api-pod
-          image: rsinner123/people:{{BUILD_NUMBER}}          
+          image: rsinner123/people:v2          
           ports:
           - containerPort: 80
-        imagePullSecrets:
-          - name: regcred
+ #       imagePullSecrets:
+ #         - name: regcred
 ---
 apiVersion: v1
 kind: Service
